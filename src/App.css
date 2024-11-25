@@ -1,0 +1,333 @@
+:root {
+  --color1: #1B1B1B;
+  --color2: #F3DD29;
+  --color3: #F0E27B;
+  --color4: red;
+  --color5: #2C75CA;
+  --color6: #fcfaf6;
+  --color7: #E2E1DD;
+  --color8: #f9f9f9;
+  --color10: #cc99a2;
+  --color11: #84FFE1;
+  --color12: #b3ebf2;
+  --color13: #b4b4b0;
+  --color14: #FFD1DC;
+  --color15: #404347;
+
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.appBackground {
+  background-color: var(--color5);
+  color: var(--color3);
+  min-height: 100vh;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+
+
+}
+
+.cardBackground {
+  background-color: var(--color2);
+  color: var(--color5);
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
+
+}
+
+
+.answerBackground:hover {
+  background-color: var(--color13);
+  transition-duration: 0.35s;
+
+
+}
+
+.answerBackground {
+  background-color: var(--color5);
+  color: var(--color2);
+  border-radius: 15px;
+  align-items: center;
+  padding: 10px;
+  min-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid var(--color2);
+  box-shadow: 5px 5px var(--color10);
+
+}
+.hiddenStatsBackground{
+  background-color: ;
+  height: 20px;
+}
+.statsText{
+  font-size: 15px;
+}
+.hiddenQuestionBackground {
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: 15px;
+  align-items: center;
+  padding: ;
+  min-height: 70px;
+  margin-top: ;
+  margin-bottom: 5px;
+  border: 2px solid var(--color2);
+  box-shadow: 5px 5px var(--color10);
+  width:50px;
+
+}
+
+.allStatsHidden {
+  color: var(--shadow-color);
+  font-size: 10px;
+}
+
+.questionNumberText {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.questionTitleText {
+  font-size: 40px;
+  color: var(--color7);
+  margin-top: 10px;
+
+}
+
+.answerNumberText {
+  font-size: 20px;
+  /* Adjust font size for visibility */
+  display: flex;
+  align-items: center;
+  /* Centers vertically */
+  height: 100%;
+  /* Stretch to parent height */
+}
+
+.scoreNumberText {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: 100%;
+  /* Stretch to parent height */
+  text-align: center;
+  /* Align text if flex fallback */
+}
+
+.questionCountText {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color2);
+}
+
+.scoreboxTitleText {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color15)
+}
+
+.scoreboxText1 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color5);
+  margin: 0;
+
+}
+
+.scoreboxText2 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color10);
+  margin: 0;
+}
+
+
+.scoreBox {
+  position: fixed;
+  /* Use fixed positioning for consistent placement relative to the viewport */
+  top: 20px;
+  right: ;
+  width: 90px;
+  height: 140px;
+  /* Ensure square width */
+  background-color: var(--color2);
+  border-radius: 15px;
+  /* Slightly rounded corners */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+  color: var(--color5);
+  /* Adjust text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: add shadow for better visibility */
+  overflow: hidden;
+  /* Ensure content doesn't overflow the box */
+  box-sizing: border-box;
+  /* Include padding and border in width/height calculations */
+  aspect-ratio: ;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.team1click {
+  background-color: var(--color3);
+  height: 50%;
+  width: 7px;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.team1click:hover {
+  background-color: var(--shadow-color);
+  transition-duration: 0.15s;
+
+}
+
+.team2click {
+  background-color: var(--color10);
+  height: 50%;
+  width: 20px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.team2click:hover {
+  background-color: var(--shadow-color);
+
+}
+
+.teamClickContainer {
+  border: 1px solid var(--color2);
+  height: 100%;
+
+}
+
+.greyed-out {
+  opacity: 0.5;
+  pointer-events: none;
+  /* Optional: Disables clicks on greyed-out buttons */
+}
+
+.team1click.red,
+.team2click.red {
+  background-color: red;
+  /* Change the color to red for the clicked team */
+  transition-duration: 0.2s;
+}
+
+.questionFormat {
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sidebarText {
+  color: var(--color15);
+  font-size: 16px;
+  margin: 0px;
+}
+
+.sidebar {
+  height: 60%;
+  padding: 5px;
+overflow: hidden;
+  position: fixed;
+  /* Use fixed positioning for consistent placement relative to the viewport */
+  top: 170px;
+  right: ;
+  width: 90px;
+  /* Ensure square width */
+  background-color: var(--color2);
+  border-radius: 15px;
+  /* Slightly rounded corners */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+  display: flex;
+  flex-direction: column;
+  /* Arrange text vertically */
+  align-items: center;
+  /* Center content horizontally */
+  justify-content: center;
+  /* Center content vertically */
+  color: var(--color5);
+  /* Adjust text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: add shadow for better visibility */
+  /* Ensure content doesn't overflow the box */
+  box-sizing: border-box;
+  /* Include padding and border in width/height calculations */
+
+}
+
+.landingTitleText {
+  font-size: 60px;
+  color: var(--color2);
+}
+
+.landingSubTitleText {
+  font-size: 30px;
+  color: var(--color2);
+}
+
+.landingRulesText {
+  font-size: 20px;
+  color: var(--color2);
+}
+
+.landingRulesBorder {
+  background-color: var(--color2);
+  height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0; /* Centers vertically */
+}
+
+.sidebar-link.active {
+  background-color: var(--shadow-color);
+  color: var(--color3); /* Optional: Adjust text color for contrast */
+  border-radius: 5px;
+  transition: 0.5s;
+  padding: 4px;
+}
+
+.redX {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.redX.black {
+  background-color: var(--shadow-color);
+  color: white;
+}
+
+.redX.red {
+  background-color: red;
+  color: white;
+}
