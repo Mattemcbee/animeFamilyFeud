@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 
 const Sidebar = ({ questions }) => {
   // State to track the active question
@@ -8,9 +9,9 @@ const Sidebar = ({ questions }) => {
   const handleClick = (id) => {
     setActiveQuestionId(id); // Update active question ID
   };
-
   return (
-    <Nav className="flex-column sidebar">
+    <div className='  d-none d-sm-block'>
+    <Nav className="flex-column sidebar ">
       {questions.map((question) => (
         <Nav.Link
           key={question.id}
@@ -24,6 +25,7 @@ const Sidebar = ({ questions }) => {
         </Nav.Link>
       ))}
     </Nav>
+    </div>
   );
 };
 

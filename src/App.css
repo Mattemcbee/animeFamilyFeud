@@ -1,9 +1,9 @@
 :root {
   --color1: #1B1B1B;
-  --color2: #F3DD29;
+  --color2: #f0ec7b;
   --color3: #F0E27B;
   --color4: red;
-  --color5: #2C75CA;
+  --color5: #4f536c;
   --color6: #fcfaf6;
   --color7: #E2E1DD;
   --color8: #f9f9f9;
@@ -13,6 +13,9 @@
   --color13: #b4b4b0;
   --color14: #FFD1DC;
   --color15: #404347;
+  --color16: #2C75CA;
+  --color17: #F3DD29;
+
 
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -81,7 +84,7 @@
 
 .allStatsHidden {
   color: var(--shadow-color);
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .questionNumberText {
@@ -100,7 +103,7 @@
 }
 
 .answerNumberText {
-  font-size: 20px;
+  font-size: 25px;
   /* Adjust font size for visibility */
   display: flex;
   align-items: center;
@@ -164,7 +167,7 @@
   top: 20px;
   right: ;
   width: 90px;
-  height: 140px;
+  height: 150px;
   /* Ensure square width */
   background-color: var(--color2);
   border-radius: 15px;
@@ -246,12 +249,12 @@ html {
 }
 
 .sidebar {
-  height: 60%;
-  padding: 5px;
+  height: 66%;
+  padding: 0px;
 overflow: hidden;
   position: fixed;
   /* Use fixed positioning for consistent placement relative to the viewport */
-  top: 170px;
+  top: 180px;
   right: ;
   width: 90px;
   /* Ensure square width */
@@ -311,7 +314,6 @@ overflow: hidden;
 
 .redX {
   display: inline-block;
-  text-align: center;
   cursor: pointer;
   font-size: 10px;
   font-weight: bold;
@@ -320,14 +322,26 @@ overflow: hidden;
   width: 20px;
   padding: 5px;
   border-radius: 5px;
+  aspect-ratio: 1;
 }
 
 .redX.black {
   background-color: var(--shadow-color);
-  color: white;
+  color: var(--color6);
+    height: 20px;
+  width: 20px;
+  aspect-ratio: 1;
+    margin: 10px;
+
+
 }
 
 .redX.red {
-  background-color: red;
-  color: white;
+  background-color: var(--color4);
+  color: var(--color6);
+    height: 20px;
+  width: 20px;
+  aspect-ratio: 1;
+    margin: 10px;
+
 }

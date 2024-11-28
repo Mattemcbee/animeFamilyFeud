@@ -82,6 +82,8 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
     console.log('Updated teamScores: ', teamScores);
   }, [teamScores]); // This will log the teamScores each time they change
 
+const totalAnswers= question.allStats
+
   return (
     <>
       {question.type === 'standard' && (
@@ -104,7 +106,7 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
             {/* Answer List */}
             <Row>
               {question.answers.map((answer) => (
-                <Col xs={6} key={answer.id}>
+                <Col sm={6}  xs={12}  key={answer.id}>
                   <Container
                     fluid
                     className="answerBackground"
@@ -120,7 +122,7 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
                           <h2 className="answerNumberText">{answer.answer}</h2>
                         )}
                       </Col>
-                      <Col xs={2}>
+                      <Col sm={2} xs={1}>
                         {visibleAnswers[answer.id] && (
                           <h1 className="scoreNumberText">{answer.points}</h1>
                         )}
@@ -165,7 +167,7 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
             <Row>
                   <Col>
                     <Container
-                      className={`redX ${xStates[0] ? 'red' : 'black'}`}
+                      className={`redX ${xStates[0] ? 'red' : 'black'} text-center`}
                       onClick={() => handleXClick(0)}
                       fluid
                     >
@@ -246,7 +248,8 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
                     const uniqueAnswerId = `${subIndex}-${answer.id}`;
 
                     return (
-                      <Col xs={4} key={uniqueAnswerId}>
+                      <Col sm={6}  xs={12}  key={uniqueAnswerId}>
+
                         <Container
                           fluid
                           className="answerBackground"
@@ -262,8 +265,8 @@ const StandardQuestion = ({ question, teamScores, setTeamScores }) => {
                                 <h2 className="answerNumberText">{answer.answer}</h2>
                               )}
                             </Col>
-                            <Col xs={2}>
-                              {visibleAnswers[uniqueAnswerId] && (
+                            <Col sm={2} xs={1}>
+                            {visibleAnswers[uniqueAnswerId] && (
                                 <h1 className="scoreNumberText">{answer.points}</h1>
                               )}
                             </Col>

@@ -16,7 +16,7 @@ const DisplayQuestions = () => {
         {/* Sidebar */}
 <LandingPage />
         {/* Main Content */}
-        <Col xs={11}>
+        <Col xs={12} sm={11}>
           {QUESTIONS.map((question) => (
             <div id={`question-${question.id}`} key={question.id} style={{ marginBottom: '100px' }}>
               <StandardQuestion
@@ -27,9 +27,9 @@ const DisplayQuestions = () => {
             </div>
           ))}
         </Col>
-                <Col xs={1}>
+                <Col xs={1} >
                       <ScoreBox scores={[teamScores[0] || 0, teamScores[1] || 0]} /> {/* Ensure default values */}
-          <Sidebar questions={QUESTIONS} />
+                      <Sidebar questions={QUESTIONS} />
 
         </Col>
 
