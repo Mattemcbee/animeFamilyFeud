@@ -71,7 +71,7 @@ export const QUESTIONS = [
   },
   {
     id: 2,
-    question: 'Name anime series that made you cry',
+    question: 'Name anime show/movie that made you cry',
     type: 'standard',
     answers: [
       { id: 1, answer: 'Fullmetal Alchemist', points: 33 },
@@ -563,9 +563,76 @@ export const QUESTIONS = [
     ]
 
   },
+ 
+    {
+    id: 16,
+    question: 'Boys You Definitely Had a Crush On?',
+    type: 'standard',
+    answers: [
+      { id: 1, answer: 'Levi Ackerman', points: 27 },
+      { id: 2, answer: 'Kakashi', points: 25 },
+      { id: 3, answer: 'Itachi', points: 19 },
+      { id: 4, answer: 'Zuko', points: 15 },
+      { id: 5, answer: 'Gojo', points: 12 }
+    ],
+    allStats: []
+  },
+   
+  {
+    id: 17,
+    question: 'Best Human/Demon hybrid character?',
+    type: 'standard',
+    answers: [
+      { id: 1, answer: 'Inuyahsa', points: 39 },
+      { id: 2, answer: 'Ken Kaneki (TG)', points: 34 },
+      { id: 3, answer: 'Ichigo (Bleach)', points: 11 },
+      { id: 4, answer: 'Yuji Itadori', points: 10 },
+      { id: 5, answer: 'Denji', points: 4 }
+    ],
+    allStats: []
+  },
+  {
+    id: 18,
+    question: 'Most hated character?',
+    type: 'standard',
+    answers: [
+      { id: 1, answer: 'Shou Tucker', points: 38 },
+      { id: 2, answer: 'Danzo Shimura', points: 23 },
+      { id: 3, answer: 'Nobuyuki sugo (SAO)', points: 16 },
+      { id: 4, answer: 'Yakumo Oomori', points: 11 },
+      { id: 5, answer: 'Griffith', points: 10 }
+    ],
+    allStats: []
+  },
+  {
+    id:19,
+    question: 'Best Couple?',
+    type: 'standard',
+    answers: [
+      { id: 1, answer: 'Lucy & Natsu (FT)', points: 23 },
+      { id: 2, answer: 'Winry & Edward', points: 21 },
+      { id: 3, answer: 'Minato & Kushina', points: 20 },
+      { id: 4, answer: 'Kagome & Inuyahsa', points: 18 },
+      { id: 5, answer: 'Riza Hawkeye & Roy Mustang', points: 16 }
+    ],
+    allStats: []
+  },
+  {
+    id: 20,
+    question: 'Best Anime of All Time?',
+    type: 'standard',
+    answers: [
+      { id: 1, answer: 'Attack on Titan', points: 24 },
+      { id: 2, answer: 'Naruto', points: 23 },
+      { id: 3, answer: 'Death Note', points: 19 },
+      { id: 4, answer: 'FMA Brotherhood', points: 18 },
+      { id: 5, answer: 'Hunter x Hunter', points: 15 }
+    ],
+    allStats: []
+  },
   {
     id: 97,
-    question: '*PRACTICE* Who is the most attractive female character?',
+    question: '*P* Who is the most attractive female character?',
     type: 'standard',
     answers: [
       { id: 1, answer: 'Mikasa Ackerman', points: 28 },
@@ -577,8 +644,8 @@ export const QUESTIONS = [
     allStats: [
       'Mikasa Ackerman - 3 mentions',
       'Power - 2 mentions',
-      'Makima (Chainsaw Man) - 2 mentions',
-      'Yor Forger (Spy x Family) - 2 mentions',
+      'Makima (CSM) - 2 mentions',
+      'Yor Forger (SxF) - 2 mentions',
       'Rem - 2 mentions',
       'Faye Valentine - 1 mention',
       'Misato Katsuragi - 1 mention',
@@ -588,7 +655,7 @@ export const QUESTIONS = [
       'Miruko - 1 mention',
       'Joleyn - 1 mention',
       'Hanako Koyanagi - 1 mention',
-      'Misa Misa (Death Note) - 1 mention',
+      'Misa Misa - 1 mention',
       'Asuna Yuuki - 1 mention',
       'Nami - 1 mention',
       'Yuki (JJK) - 1 mention',
@@ -601,7 +668,7 @@ export const QUESTIONS = [
       'Winry Rockbell - 1 mention',
       'Haman Karn - 1 mention',
       'Yoko Littner - 1 mention',
-      'Artoria Pendragon (Saber) - 1 mention',
+      'Artoria Pendragon - 1 mention',
       'Rias Gremory - 1 mention',
       'Nina (Fullmetal Alchemist) - 1 mention',
       'Kallen Kousuki - 1 mention',
@@ -632,19 +699,19 @@ export const QUESTIONS = [
         ]
       },
       {
-        id: 2, question: '*PRACTICE* Name a color', answers: [
-          { id: 1, answer: 'Red', points: 51 },
-          { id: 2, answer: 'Blue', points: 17 },
-          { id: 3, answer: 'Green', points: 14 },
+        id: 2, question: '*PRACTICE* Name a your biggest fear', answers: [
+          { id: 1, answer: 'Death', points: 51 },
+          { id: 2, answer: 'Bombs', points: 17 },
+          { id: 3, answer: 'Spiders', points: 14 },
           { id: 4, answer: 'Yellow', points: 9 },
           { id: 5, answer: 'Purple', points: 9 }
         ]
       },
       {
-        id: 3, question: '*PRACTICE* Name a shape', answers: [
-          { id: 1, answer: 'Square', points: 51 },
-          { id: 2, answer: 'Circle', points: 17 },
-          { id: 3, answer: 'Triangle', points: 14 },
+        id: 3, question: '*PRACTICE* Guess how you will die ', answers: [
+          { id: 1, answer: 'Steve Harvey', points: 51 },
+          { id: 2, answer: 'Bees', points: 17 },
+          { id: 3, answer: 'The passing of time', points: 14 },
           { id: 4, answer: 'Rhombus ', points: 9 },
           { id: 5, answer: 'idk', points: 9 }
         ]

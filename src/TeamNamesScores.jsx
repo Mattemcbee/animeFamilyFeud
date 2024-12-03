@@ -1,12 +1,12 @@
 export const TEAMS = [
   {
     id: 0,
-    teamName: `Gojo's homie G`,
+    teamName: `Team Dan`,
     score: 0,
   },
  {
     id: 1,
-    teamName: `Naruto's a cool guy`,
+    teamName: `Fuck Dan`,
     score: 0,
   },
 ];

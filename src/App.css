@@ -164,10 +164,10 @@
 .scoreBox {
   position: fixed;
   /* Use fixed positioning for consistent placement relative to the viewport */
-  top: 20px;
+  top: 10px;
   right: ;
   width: 90px;
-  height: 150px;
+  height: 120px;
   /* Ensure square width */
   background-color: var(--color2);
   border-radius: 15px;
@@ -244,17 +244,17 @@ html {
 
 .sidebarText {
   color: var(--color15);
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px;
 }
 
 .sidebar {
-  height: 66%;
+  height: 74%;
   padding: 0px;
 overflow: hidden;
   position: fixed;
   /* Use fixed positioning for consistent placement relative to the viewport */
-  top: 180px;
+  top: 140px;
   right: ;
   width: 90px;
   /* Ensure square width */
@@ -344,4 +344,17 @@ overflow: hidden;
   aspect-ratio: 1;
     margin: 10px;
 
+}
+.steveGrow {
+  height: 200px;
+  transition: all 0.75s ease;
+  opacity: 85%;
+}
+
+.steveGrow:hover {
+  height: 70vh;
+  transition: all 2s ease;
+  z-index: 100;
+  opacity: 100%;
+  filter: drop-shadow(0 0 0 red) brightness(0.9);
 }
